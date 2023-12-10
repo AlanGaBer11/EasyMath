@@ -1,0 +1,50 @@
+{%extends "layout.html" %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Longitud</title>
+    <link rel="stylesheet" href="/static/css/conversion.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <h2>Conversión de Longitud</h2>
+        <label for="fromUnit">De:</label>
+        <select id="fromUnit">
+            <option value="km">Kilómetro (km)</option>
+            <option value="m">Metro (m)</option>
+            <option value="dm">Decímetro (dm)</option>
+            <option value="cm">Centímetro (cm)</option>
+            <option value="mm">Milímetro (mm)</option>
+            <option value="mi">Milla (mi)</option>
+            <option value="yd">Yarda (yd)</option>
+            <option value="ft">Pie (ft)</option>
+            <option value="in">Pulgada (in)</option>
+        </select>
+
+        <label for="toUnit">A:</label>
+        <select id="toUnit">
+            <option value="km">Kilómetro (km)</option>
+            <option value="m">Metro (m)</option>
+            <option value="dm">Decímetro (dm)</option>
+            <option value="cm">Centímetro (cm)</option>
+            <option value="mm">Milímetro (mm)</option>
+            <option value="mi">Milla (mi)</option>
+            <option value="yd">Yarda (yd)</option>
+            <option value="ft">Pie (ft)</option>
+            <option value="in">Pulgada (in)</option>
+        </select>
+
+        <label for="value">Valor:</label>
+        <input type="number" id="value" placeholder="Ingrese el valor" />
+
+        <button onclick="convertLength()">Convertir</button>
+        <div id="result"></div>
+        <a href="/conversion"><button style="background-color: #ddd; color:#333">Atras</button></a>
+
+    </div>
+
+    <script src="/static/js/longitud.js"></script>
+</body>
+{% endblock %}

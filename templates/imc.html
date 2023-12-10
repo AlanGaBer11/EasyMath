@@ -1,0 +1,26 @@
+{%extends "layout.html" %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="/static/css/conversion.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculadora de IMC</h1>
+        <div>
+            <label for="weight">Peso (kg):</label>
+            <input type="number" id="weight" placeholder="Ingrese su peso">
+        </div>
+        <div>
+            <label for="height">Altura (m):</label>
+            <input type="number" id="height" placeholder="Ingrese su altura">
+        </div>
+        <button onclick="calculateIMC()">Calcular IMC</button>
+        <div id="result"></div>
+        <a href="/conversion"><button style="background-color: #ddd; color:#333">Atras</button></a>
+    </div>
+    <script src="/static/js/imc.js"></script>
+</body>
+{% endblock %}

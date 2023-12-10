@@ -1,0 +1,26 @@
+{%extends "layout.html" %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/static/css/singUp.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Account</h1>
+        <form action="/signUp" method="POST">
+            <div>
+                <input type="text" id="nombre_usuario" name="nombre_usuario" placeholder="Nombre de usuario" required>
+                <input type="text" id="nombre"  name="nombre" placeholder="Nombre">
+                
+                <input type="text" id="ap_paterno" name="ap_paterno" placeholder="Apellido Paterno" required>
+                <input type="text" id="ap_materno" name="ap_materno" placeholder="Apellido Materno" required>
+                <input type="email" id="correo" name="correo" placeholder="Ejemplo@ejemplo.com" required>
+                <input type="password" id="passw" name="passw" placeholder="Contraseña" required>
+                <a type="button" href="/index"><button type="submit" id="signUp">Sign Up</button></a>
+            </div>
+        </form>
+    </div>
+</body>
+{% endblock %}

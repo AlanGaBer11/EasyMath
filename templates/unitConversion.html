@@ -1,0 +1,26 @@
+{%extends "layout.html" %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Conversion</title>
+    <link rel="stylesheet" href="/static/css/unitConversion.css">
+
+</head>
+<body>
+    <div class="tittle-container">
+        <div class="tittle">Unit Conversion</div>
+    </div>
+    <div class="container">
+        <a href="/imc" class="card" id="imc"><img src="/static/img/scales.png">IMC</a>
+        <a href="/longitud"class="card"><img src="/static/img/scale.png">Longitud</a>
+        <a href="/datos"class="card"><img src="/static/img/data.png">Datos</a>
+        <a href="/masa"class="card"><img src="/static/img/user (1).png">Masa</a>
+        <a href="/velocidad"class="card"><img src="/static/img/speedometer.png">Velocidad</a>
+        <a href="/temperatura"class="card"><img src="/static/img/thermometer.png">Temperatura</a>
+        <a href="/tiempo"class="card"><img src="/static/img/clock.png">Tiempo</a>
+        <a href="/volumen"class="card"><img src="/static/img/volume.png">Volumen</a>
+    </div>
+    <script src="/static/js/conversion.js"></script>
+</body>
+{% endblock %}

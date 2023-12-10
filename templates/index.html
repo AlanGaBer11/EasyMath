@@ -1,0 +1,35 @@
+{%extends "layout.html" %}
+{% block content %}
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyMath</title>
+    <link rel="stylesheet" href="static/css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title-wrapper">
+            <span>*</span>
+            <h1>EasyMath</h1>
+        </div>
+        <img src="static/img/Maths.png" alt="Image"class="math" width="450" height="400">
+
+        <div class="content">
+            <h2>Vamos a Comenzar</h2>
+            <div class="buttons">
+                <div class="button-group">
+                    <a href="/login"><button type="submit">Login</button></a>
+                    <a href="/basic"><button type="submit">Basic Calculator</button></a>
+                </div>
+                <div class="button-group">
+                    <a href="/advanced"><button type="submit">Advanced Calculator</button></a>
+                    <a href="/conversion"><button type="submit">Unit Conversion</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}

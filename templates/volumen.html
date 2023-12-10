@@ -1,0 +1,55 @@
+{%extends "layout.html" %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>volumen</title>
+    <link rel="stylesheet" href="/static/css/conversion.css">
+    <script src="/static/js/volumen.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <h2>Conversión de Volumen</h2>
+        <div>
+            <label for="fromUnit">De:</label>
+            <select id="fromUnit">
+                <option value="metroCubico">Metro Cúbico</option>
+                <option value="decimetroCubico">Decímetro Cúbico</option>
+                <option value="centimetroCubico">Centímetro Cúbico</option>
+                <option value="milimetroCubico">Milímetro Cúbico</option>
+                <option value="litro">Litro</option>
+                <option value="decilitro">Decilitro</option>
+                <option value="centilitro">Centilitro</option>
+                <option value="mililitro">Mililitro</option>
+                <option value="pieCubico">Pie Cúbico</option>
+                <option value="yardaPulgadaCubica">Yarda Pulgada Cúbica</option>
+                <option value="yardaCubica">Yarda Cúbica</option>
+            </select>
+        </div>
+        <div>
+            <label for="toUnit">A:</label>
+            <select id="toUnit">
+                <option value="metroCubico">Metro Cúbico</option>
+                <option value="decimetroCubico">Decímetro Cúbico</option>
+                <option value="centimetroCubico">Centímetro Cúbico</option>
+                <option value="milimetroCubico">Milímetro Cúbico</option>
+                <option value="litro">Litro</option>
+                <option value="decilitro">Decilitro</option>
+                <option value="centilitro">Centilitro</option>
+                <option value="mililitro">Mililitro</option>
+                <option value="pieCubico">Pie Cúbico</option>
+                <option value="yardaPulgadaCubica">Yarda Pulgada Cúbica</option>
+                <option value="yardaCubica">Yarda Cúbica</option>
+            </select>
+        </div>
+        <div>
+            <label for="value">Valor:</label>
+            <input type="number" id="value" placeholder="Ingrese el valor">
+        </div>
+        <button onclick="convert()">Convertir</button>
+        <div id="result"></div>
+        <a href="/conversion"><button style="background-color: #ddd; color:#333">Atras</button></a>
+
+    </div>
+</body>
+{% endblock %}

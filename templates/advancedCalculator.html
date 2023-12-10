@@ -1,0 +1,69 @@
+{%extends "layout.html" %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="/static/css/advancedCalculator.css">
+    <script src="/static/js/basic.js"></script>
+</head>
+
+<body>
+    <div class="tittle-container">
+        <div class="tittle">Advanced Calculator</div>
+    </div>
+    <div class="calculator">
+        <div class="input" id="input"></div>
+        <div class="buttons">
+            <div class="operators">
+                <div>|A|</div>
+                <div>x<sup>2</sup></div>
+                <div>x<sup>y</sup></div>
+                <div>&#8730;</div>
+                <div>+</div>
+                <div>-</div>
+                <div>&times;</div>
+                <div>&divide;</div>
+            </div>
+            <div class="operators">
+                <div>M+</div>
+                <div>(</div>
+                <div>ctg</div>
+                <div>&pi;</div>
+                <div style="background-color: #5ce1e6; border-color:#5ce1e6;">7</div>
+                <div style="background-color: #5ce1e6; border-color:#5ce1e6;">8</div>
+                <div style="background-color: #5ce1e6; border-color:#5ce1e6;">9</div>
+            </div>
+            <div class="operators ">
+                <div>MR</div>
+                <div>)</div>
+                <div>atg</div>
+                <div>tg</div>
+                <div style="background-color: #5ce1e6; border-color:#5ce1e6;">4</div>
+                <div style="background-color: #5ce1e6; border-color:#5ce1e6;">5</div>
+                <div style="background-color: #5ce1e6; border-color:#5ce1e6;">6</div>
+            </div>
+            <div class="operators">
+                <div>MC</div>
+                <div>%</div>
+                <div>acos</div>
+                <div>cos</div>
+                <div style="background-color: #5ce1e6; border-color:#5ce1e6;">1</div>
+                <div style="background-color: #5ce1e6; border-color:#5ce1e6;">2</div>
+                <div style="background-color: #5ce1e6; border-color:#5ce1e6;">3</div>
+            </div>
+            <div class="operators">
+                <div>AC</div>
+                <div>00</div>
+                <div>asin</div>
+                <div>sin</div>
+                <div style="background-color: #5ce1e6; border-color:#5ce1e6;">0</div>
+                <div style="background-color: #5ce1e6; border-color:#5ce1e6;">.</div>
+                <div style="background-color: #5ce1e6; border-color:#5ce1e6;">C</div>
+            </div>
+            <div class="equal" id="result">=</div>
+
+        </div>
+    </div>
+</body>
+{% endblock %}

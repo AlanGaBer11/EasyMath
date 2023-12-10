@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EasyMath</title>
+    <link rel="stylesheet" href="/static/css/layout.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="/index">Inicio</a>
+        <div class="subnav">
+            <button class="subnavbtn">Calculators <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="/basic">Basic</a>
+                <a href="/advanced">Advanced</a>
+                <a href="/conversion">Unit Conversion</a>
+            </div>
+        </div>
+<!--
+        {% if session.nombre_usuario %}
+        <a href="#">{{ session.nombre_usuario }}</a>
+        {% else %}
+        {% endif %}-->
+        <div class="subnav">
+            <button class="subnavbtn">
+                {% if session.nombre_usuario %}
+                {{ session.nombre_usuario }}
+                {% else %}
+                Perfil
+                {% endif %}
+                <i class="fa fa-caret-down"></button>
+            <div class="subnav-content">
+                <a href="/logout">Cerrar sesión</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+{% block content %} {% endblock %}

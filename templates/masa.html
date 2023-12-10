@@ -1,0 +1,39 @@
+{%extends "layout.html" %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masa</title>
+    <link rel="stylesheet" href="/static/css/conversion.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Conversión de Masa</h1>
+        <label for="fromUnit">De:</label>
+        <select id="fromUnit">
+            <option value="ton">Tonelada (T)</option>
+            <option value="kg">Kilogramo (Kg)</option>
+            <option value="g">Gramo (g)</option>
+            <option value="mg">Miligramo (Mg)</option>
+            <option value="lb">Libra (lb)</option>
+            <option value="oz">Onza (oz)</option>
+        </select>
+        <label for="toUnit">A:</label>
+        <select id="toUnit">
+            <option value="ton">Tonelada (T)</option>
+            <option value="kg">Kilogramo (Kg)</option>
+            <option value="g">Gramo (g)</option>
+            <option value="mg">Miligramo (Mg)</option>
+            <option value="lb">Libra (lb)</option>
+            <option value="oz">Onza (oz)</option>
+        </select>
+        <label for="inputValue">Cantidad:</label>
+        <input type="number" id="inputValue" placeholder="Ingrese la cantidad" />
+
+        <button onclick="convertMasa()">Convertir</button>
+        <p id="result"></p>
+        <a href="/conversion"><button style="background-color: #ddd; color:#333">Atras</button></a>
+    </div>
+    <script src="/static/js/masa.js"></script>
+</body>
+{% endblock %}

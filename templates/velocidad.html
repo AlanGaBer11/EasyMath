@@ -1,0 +1,37 @@
+{%extends "layout.html" %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocidad</title>
+    <link rel="stylesheet" href="/static/css/conversion.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Conversión de Velocidad</h2>
+        <select id="fromUnit">
+            <option value="c">Velocidad de la luz (c)</option>
+            <option value="m/s">Metros por segundo (m/s)</option>
+            <option value="km/s">Kilómetros por segundo (km/s)</option>
+            <option value="km/h">Kilómetros por hora (km/h)</option>
+            <option value="mph">Millas por hora (mph)</option>
+            <option value="fps">Pies por segundo (fps)</option>
+            <option value="ips">Pulgadas por segundo (ips)</option>
+        </select>
+        <input type="number" id="inputValue" placeholder="Ingrese el valor">
+        <select id="toUnit">
+            <option value="c">Velocidad de la luz (c)</option>
+            <option value="m/s">Metros por segundo (m/s)</option>
+            <option value="km/s">Kilómetros por segundo (km/s)</option>
+            <option value="km/h">Kilómetros por hora (km/h)</option>
+            <option value="mph">Millas por hora (mph)</option>
+            <option value="fps">Pies por segundo (fps)</option>
+            <option value="ips">Pulgadas por segundo (ips)</option>
+        </select>
+        <button onclick="convertSpeed()">Calcular</button>
+        <div id="result"></div>
+        <a href="/conversion"><button style="background-color: #ddd; color:#333">Atras</button></a>
+    </div>
+    <script src="/static/js/velocidad.js"></script>
+</body>
+{% endblock %}

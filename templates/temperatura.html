@@ -1,0 +1,32 @@
+{%extends "layout.html" %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperatura</title>
+    <link rel="stylesheet" href="/static/css/conversion.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Conversion de Temperatura</h2>
+        <label for="from">De:</label>
+        <select id="from">
+            <option value="celsius">Celsius (°C)</option>
+            <option value="fahrenheit">Fahrenheit (°F)</option>
+            <option value="kelvin">Kelvin (K)</option>
+        </select>
+        <label for="to">A:</label>
+        <select id="to">
+            <option value="celsius">Celsius (°C)</option>
+            <option value="fahrenheit">Fahrenheit (°F)</option>
+            <option value="kelvin">Kelvin (K)</option>
+        </select>
+        <label for="temperature">Ingrese temperatura:</label>
+        <input type="number" id="temperature" placeholder="Ingrese temperatura" />
+        <button onclick="convertTemperature()">Convertir</button>
+        <div id="result"></div>
+        <a href="/conversion"><button style="background-color: #ddd; color:#333">Atras</button></a>
+    </div>
+    <script src="/static/js/temperatura.js"></script>
+</body>
+{% endblock %}

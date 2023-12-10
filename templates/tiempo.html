@@ -1,0 +1,39 @@
+{%extends "layout.html" %}
+{% block content %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo</title>
+    <link rel="stylesheet" href="/static/css/conversion.css">
+    <script src="/static/js/tiempo.js"></script>
+</head>
+
+<body>
+    <div class="calculator">
+        <h2>Conversión de Tiempo</h2>
+        <select id="fromUnit">
+            <option value="year">Año</option>
+            <option value="week">Semana</option>
+            <option value="day">Día</option>
+            <option value="hour">Hora</option>
+            <option value="minute">Minuto</option>
+            <option value="second">Segundo</option>
+            <option value="millisecond">Milisegundo</option>
+        </select>
+        <input type="number" id="inputValue" placeholder="Ingrese el valor">
+        <select id="toUnit">
+            <option value="year">Año</option>
+            <option value="week">Semana</option>
+            <option value="day">Día</option>
+            <option value="hour">Hora</option>
+            <option value="minute">Minuto</option>
+            <option value="second">Segundo</option>
+            <option value="millisecond">Milisegundo</option>
+        </select>
+        <button onclick="convertTime()">Convertir</button>
+        <div id="result"></div>
+        <a href="/conversion"><button style="background-color: #ddd; color:#333">Atras</button></a>
+    </div>
+</body>
+{% endblock %}

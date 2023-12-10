@@ -1,0 +1,11 @@
+{% if session.nombre_usuario %}
+
+<h3>Bienvenido, {{ session.nombre_usuario }}</h3>
+
+<p>Opciones del Perfil</p>
+
+{% else %}
+
+<p>Inicia sesión para ver tu perfil</p>
+
+{% endif %}

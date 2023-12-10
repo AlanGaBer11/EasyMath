@@ -1,0 +1,65 @@
+body{
+  background: linear-gradient(to right, #8c52ff, #5ce1e6);
+  margin: 0 auto;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+  }
+      
+  .navbar a {
+    float: left; 
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* SUB BARRA */
+  .subnav {
+    float: left;
+    overflow: hidden;  
+  }
+        
+  .subnav .subnavbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: #ddd;
+    color: black;
+  }
+      
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    z-index: 1;
+  }
+      
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;  
+  }
+      
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  .subnav:hover .subnav-content {
+    display: block;
+  }
